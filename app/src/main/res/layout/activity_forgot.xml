@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.forgotActivity"
+    android:layout_margin="5dp"
+    android:id="@+id/rlForgotPass"
+    android:background="#FFDADA"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightMarun"
+        android:id="@+id/rlContentMain">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="240dp"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/foodlogo"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/txtEnterMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:text="Enter your registered mobile number and email id below:"
+        android:textColor="@color/colorSecondaryVariant"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEnterMobile"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:background="#ffff"
+        android:hint="Mobile Number (10 digit)"
+        android:maxLines="1"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColor="@color/colorOnSecondary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPhone"
+        android:layout_marginTop="15dp"
+        android:background="#ffff"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorOnSecondary"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="20dp"
+        android:padding="7dp"
+        android:textAlignment="center"
+        android:background="@color/colorSecondaryVariant"
+        android:text="NEXT"
+        android:textColor="#FEFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

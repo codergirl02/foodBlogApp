@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#DCA1F6</color>
+    <color name="blue">#FF3700B3</color>
+    <color name="colorOnSecondary">#FF000000</color>
+    <color name="lightMarun">#FFDADA</color>
+    <color name="colorSecondaryVariant">#FF6262</color>
+    <color name="cart_button">#4CAF50</color>
+
+</resources>

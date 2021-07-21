@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ResetActivityPass"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightMarun"
+            android:id="@+id/rlOTP">
+
+            <TextView
+                android:id="@+id/txtEnterMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Otp that you received"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/etOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEnterMobile"
+                android:background="#FFFEFF"
+                android:padding="10dp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:fontFamily="sans-serif"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:hint="Enter Otp"/>
+
+
+            <EditText
+                android:id="@+id/etNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etOTP"
+                android:background="#FCFCFD"
+                android:padding="10dp"
+                android:fontFamily="sans-serif"
+                android:layout_margin="10dp"
+                android:inputType="numberPassword"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:hint="New password"/>
+
+
+            <EditText
+                android:id="@+id/etConfirmNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etNewPassword"
+                android:background="#FCFCFD"
+                android:padding="10dp"
+                android:inputType="numberPassword"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:fontFamily="sans-serif"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:hint="Confirm New-password"/>
+
+
+            <Button
+                android:id="@+id/btnSubmitOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etConfirmNewPassword"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@color/colorSecondaryVariant"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</ScrollView>
